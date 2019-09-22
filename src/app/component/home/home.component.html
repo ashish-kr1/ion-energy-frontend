@@ -1,0 +1,8 @@
+
+<div class="container">
+    <input id="contentFile" class="button button1" type="file" accept=".json" name="avatar"  ng2FileSelect [uploader]="uploader" />
+    <button (click)="send()" class="button button1" >Send</button>
+</div>
+<div style="text-align: center;" *ngIf="uploading">
+<img src="./../../../assets/loading.gif" width=200 height=200>
+</div>

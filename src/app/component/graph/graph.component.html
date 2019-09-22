@@ -1,0 +1,9 @@
+<div class="btnDiv">
+    <button (click)="getFromFile()" class="button button1">Get from uploaded file</button>
+    <button (click)="getFromDB()" class="button button1">Get from Database</button>
+</div>
+<div style="text-align: center;" *ngIf="loading">
+    <img src="./../../../assets/loading.gif" width=200 height=200>
+</div>
+<span *ngIf="noData" class="errMessage">Database empty!!.. First get from upload file</span>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
